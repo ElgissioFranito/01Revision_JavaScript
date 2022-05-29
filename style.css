@@ -1,14 +1,14 @@
-h1{
+h1 {
     background-color: aquamarine;
     opacity: 60%;
     color: blue;
     text-align: center;
     border: 1px solid;
-    border-radius: 6px ;
+    border-radius: 6px;
 }
 
-body{
-    background: url("item/bg.jpg") no-repeat ;
+body {
+    background: url("item/bg.jpg") no-repeat;
     background-size: cover;
     /* opacity: 70%; */
     color: aliceblue;
@@ -16,7 +16,7 @@ body{
     font-size: large;
 }
 
-button{
+button {
     font-family: 'Courier New', Courier, monospace;
     font-size: large;
     text-align: center;
@@ -29,12 +29,12 @@ button{
     margin: 10px;
 }
 
-button:hover{
+button:hover {
     background-color: blueviolet;
     color: bisque;
 }
 
-.mena{
+.mena {
     background-color: red;
     border: 1px solid black;
     padding-right: 5%;
@@ -48,19 +48,20 @@ button:hover{
     padding-left: 5%;
 }
 
-.gris{
+.gris {
     background-color: rgb(173, 157, 157);
     opacity: 80%;
     border: 1px solid white;
-    padding: 2% 10% 2% 10%;     /* haut gauche bas droite */
+    padding: 2% 10% 2% 10%;
+    /* haut gauche bas droite */
 }
 
-.paraky{
+.paraky {
     background-color: gray;
 }
 
-.solaitra{
-    
+.solaitra {
+
     background: white;
     border-radius: 10px;
     border: 1px solid gray;
@@ -70,33 +71,36 @@ button:hover{
     /* border-collapse: collapse; */
 }
 
-tr,td{
+tr,
+td {
     padding: 15px;
     text-align: center;
     border-bottom: 1px solid gray;
 }
 
-tr{
+tr {
     transition: all -2s ease-in;
     cursor: pointer;
 }
-tr:hover{
+
+tr:hover {
     transform: scale(1.03);
     background: darkseagreen;
     /* border: 2px gray solid;
     border-radius: 10px;*/
-    box-shadow: 0px 10px 20px black;     /* x y durété color*/
-} 
+    box-shadow: 0px 10px 20px black;
+    /* x y durété color*/
+}
 
-.tab{
+.tab {
     margin-left: 20%;
 }
 
-h2{
+h2 {
     font-style: italic;
 }
 
-#event1{
+#event1 {
     color: black;
     text-align: center;
     background-color: aliceblue;
@@ -104,7 +108,8 @@ h2{
     border: solid white;
     border-radius: 15px;
 }
-#event2{
+
+#event2 {
     color: white;
     text-align: center;
     background-color: brown;
@@ -113,7 +118,7 @@ h2{
     border-radius: 15px;
 }
 
-#event3{
+#event3 {
     color: white;
     text-align: center;
     background-color: green;
@@ -122,23 +127,25 @@ h2{
     border-radius: 15px;
 }
 
-#myDiv, #result{
+#myDiv,
+#result {
     margin: 50px;
 }
 
 
 #myDiv {
-padding: 10px;
-width: 200px;
-text-align: center;
-background-color: #000;
-}
-#myDiv div {
-margin: 10px;
-background-color: #555;
+    padding: 10px;
+    width: 200px;
+    text-align: center;
+    background-color: #000;
 }
 
-form{
+#myDiv div {
+    margin: 10px;
+    background-color: #555;
+}
+
+form {
     color: #555;
     background: rgb(239, 255, 91);
     opacity: 70%;
@@ -149,7 +156,8 @@ form{
     width: 70%;
 }
 
-input[type="submit"], input[type="reset"]{
+input[type="submit"],
+input[type="reset"] {
     padding: 20px;
     padding-left: 10%;
     padding-right: 10%;
@@ -157,15 +165,30 @@ input[type="submit"], input[type="reset"]{
     border: 1px solid aqua;
     border-radius: 10px;
 }
-input[type="submit"]:hover,input[type="reset"]:hover {
-background-color: deeppink;
-cursor: pointer;
-}
 
-input{
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    background-color: deeppink;
     cursor: pointer;
 }
-section{
+
+input {
+    cursor: pointer;
+}
+
+section {
     border: 1px solid aqua;
     border-radius: 10px;
+}
+
+.draggableBox {
+    position: absolute;
+    width: 80px;
+    height: 60px;
+    padding-top: 10px;
+    text-align: center;
+    font-size: 40px;
+    background-color: #222;
+    color: #CCC;
+    cursor: move;
 }
