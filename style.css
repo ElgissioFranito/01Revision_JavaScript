@@ -1,0 +1,171 @@
+h1{
+    background-color: aquamarine;
+    opacity: 60%;
+    color: blue;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 6px ;
+}
+
+body{
+    background: url("item/bg.jpg") no-repeat ;
+    background-size: cover;
+    /* opacity: 70%; */
+    color: aliceblue;
+    font-family: monospace;
+    font-size: large;
+}
+
+button{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: large;
+    text-align: center;
+    color: blue;
+    background-color: lightblue;
+    border: 1px black solid;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 20px;
+    margin: 10px;
+}
+
+button:hover{
+    background-color: blueviolet;
+    color: bisque;
+}
+
+.mena{
+    background-color: red;
+    border: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.maitso {
+    background-color: rgb(0, 139, 42);
+    border: 1px solid black;
+    padding-right: 5%;
+    padding-left: 5%;
+}
+
+.gris{
+    background-color: rgb(173, 157, 157);
+    opacity: 80%;
+    border: 1px solid white;
+    padding: 2% 10% 2% 10%;     /* haut gauche bas droite */
+}
+
+.paraky{
+    background-color: gray;
+}
+
+.solaitra{
+    
+    background: white;
+    border-radius: 10px;
+    border: 1px solid gray;
+    opacity: 70%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: xx-large;
+    /* border-collapse: collapse; */
+}
+
+tr,td{
+    padding: 15px;
+    text-align: center;
+    border-bottom: 1px solid gray;
+}
+
+tr{
+    transition: all -2s ease-in;
+    cursor: pointer;
+}
+tr:hover{
+    transform: scale(1.03);
+    background: darkseagreen;
+    /* border: 2px gray solid;
+    border-radius: 10px;*/
+    box-shadow: 0px 10px 20px black;     /* x y durété color*/
+} 
+
+.tab{
+    margin-left: 20%;
+}
+
+h2{
+    font-style: italic;
+}
+
+#event1{
+    color: black;
+    text-align: center;
+    background-color: aliceblue;
+    opacity: 50%;
+    border: solid white;
+    border-radius: 15px;
+}
+#event2{
+    color: white;
+    text-align: center;
+    background-color: brown;
+    opacity: 70%;
+    border: solid brown;
+    border-radius: 15px;
+}
+
+#event3{
+    color: white;
+    text-align: center;
+    background-color: green;
+    opacity: 60%;
+    border: solid green;
+    border-radius: 15px;
+}
+
+#myDiv, #result{
+    margin: 50px;
+}
+
+
+#myDiv {
+padding: 10px;
+width: 200px;
+text-align: center;
+background-color: #000;
+}
+#myDiv div {
+margin: 10px;
+background-color: #555;
+}
+
+form{
+    color: #555;
+    background: rgb(239, 255, 91);
+    opacity: 70%;
+    text-align: center;
+    padding: 20px;
+    border: solid;
+    border-radius: 12px;
+    width: 70%;
+}
+
+input[type="submit"], input[type="reset"]{
+    padding: 20px;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: aqua;
+    border: 1px solid aqua;
+    border-radius: 10px;
+}
+input[type="submit"]:hover,input[type="reset"]:hover {
+background-color: deeppink;
+cursor: pointer;
+}
+
+input{
+    cursor: pointer;
+}
+section{
+    border: 1px solid aqua;
+    border-radius: 10px;
+}

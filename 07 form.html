@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title> formulaire interactif </title>
+    <link rel="stylesheet" href="jquery.3.6.0.min.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1> Le formulaire interactif </h1>
+    <center>
+        <form id="myForm">
+            <input id="txt" type="text" width="70%" value="input désactivé"> <br> <br>
+            <textarea id="txtarea" rows="07"> Vous n'avez pas le focus </textarea> <br><br>
+            <label><input type="radio" name="check" value="1"> Case n° 1</label><br />
+            <label><input type="radio" name="check" value="2"> Case n° 2</label><br />
+            <label><input type="radio" name="check" value="3"> Case n° 3</label><br />
+            <label><input type="radio" name="check" value="4"> Case n° 4</label>
+            <br /><br />
+            <input type="button" value="Afficher la case cochée" onclick="safidy();" /> <br><br>
+            <select id="lista">
+                <option>Sélectionnez votre sexe</option>
+                <option>Homme</option>
+                <option>Femme</option>
+            </select><br><br>
+
+
+            <!-- les methodes : focus() et blur() -->
+            <section class="gris">
+                <input id="textx" type="text" value="Entrez un texte" />
+                <br /><br />
+                <input type="button" value="Donner le focus"
+                    onclick="document.getElementById('textx').focus();" /><br />
+                <input type="button" value="Retirer le focus" onclick="document.getElementById('textx').blur();" />
+            </section> <br><br>
+
+            <!-- la methode : select() -->
+            <section class="mena"> <br>
+                <input id="textz" type="text" value="Entrez un texte" />
+                <br /><br />
+                <input type="button" value="Sélectionner le texte"
+                    onclick="document.getElementById('textz').select();" />
+                <br><br>
+            </section><br><br>
+
+            <input type="submit" value="VALIDER" />
+            <input type="reset" value="RESTORER" /> <br><br>
+        </form>
+    </center>
+    <script src="07 form.js"></script>
+</body>
+
+
+</html>

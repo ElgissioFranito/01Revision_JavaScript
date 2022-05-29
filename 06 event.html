@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="jquery.3.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- CSS fa tsy JS -->
+
+</head>
+
+<body>
+    <h1> Les evènements en JS </h1>
+
+    <div id="event1">
+        <h2>utilisation des événements sans le DOM</h2>
+        <span onclick="alert(' Je suis un événement \'click\' sur le span')">
+            click here!
+        </span>
+
+        <!-- avec this(l'element en usage) ; à utiliser seulement sur les événements sans DOM -->
+        <span class="tab"
+            onclick="alert('Voici le contenu de l\'élément que vous avez cliqué :\n\n' + this.innerHTML);">
+            Cliquez-moi!
+        </span>
+        <br> <br>
+
+        <!-- bloquer l'action par defaut des elements avec un evenement-->
+        <button href="404.html" onclick="alert('C\'est un lien bloqué!');return false;">
+            <!-- je vous ai déjà dit qu'un événement est une fonction -->
+            <!-- un ";" après return-->
+            voici un lien</button>
+
+
+        <!-- lien vide -->
+        <button class="tab" href="#" onclick="alert('je vous ai eu: ce lien ne va nulpart!'); return false; ">
+            <!-- le "#" permet le retour en haut de la page web, on la bloque avec "return false;"  -->
+            autre lien </button>
+        <br>
+        <br>
+    </div>
+    <br><br><br>
+    <div id="event2">
+        <h2> Utilisation des événements avec DOM-0</h2>
+        <span id="here">
+            click here!
+        </span>
+    </div>
+    <br>
+    <div id="capt1">
+        <span id="capt2">Cliquez-moi pour la phase de capture.</span>
+    </div>
+    <div id="boul1">
+        <span id="boul2">Cliquez-moi pour la phase de
+            bouillonnement.</span>
+    </div>
+
+
+
+    <!-- tout ce passe maintenant dans le fichier 06 event.js -->
+    <script src="06 event.js"></script>
+</body>
+
+</html>
