@@ -191,4 +191,5 @@ section {
     background-color: #222;
     color: #CCC;
     cursor: move;
+    border: rgb(77, 76, 76) 1px solid;
 }

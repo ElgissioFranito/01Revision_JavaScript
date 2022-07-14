@@ -1,7 +1,7 @@
 // Les événements permettent de déclencher une #fonction selon qu'une action s'est produite ou non. Par exemple, on peut faire
 // apparaître une fenêtre alert() lorsque l'utilisateur survole un element (par ex: un <div>) d'une page Web.
 
-// let here = document.getElementById("here");     // On laisse les getSynyTariny, à la place on utilise...
+// let here = document.getElementById("here");     // On laisse les getSynyTariny, à la place on utilise querySelector
 // let here = document.querySelector("#here");  // de meme, on a pas besoin de faire ça si c'est un id, on le fait directement comme ça...
 
 here.onclick = function () {                    // "function" fa tsy "fonction"
@@ -159,14 +159,14 @@ boul2.addEventListener('click', function () {
 const clickme = document.createElement('span');
 let ttx = document.createTextNode("cliquez!");
 clickme.id = "clickme";
-clickme.addEventListener('click', function (e) {
-    e.target.innerHTML = 'Vous avez cliqué !';
+e.target.innerHTML = 'Vous avez cliqué !';              // clickme.innerHtml (parce que l'evenement "click" est sur (ou cible) clickme)
+clickme.addEventListener('click', (e) => {
 }, false);
 clickme.appendChild(ttx);
 event2.appendChild(clickme);
 
 // Bloquer l'action par défaut de certains éléments (e.preventDefault())
-//creation lien
+// creation lien
 let bouton = document.createElement("input");
 bouton.value = " lien vers GOOGLE";
 bouton.href = "http://google.com";
@@ -185,7 +185,7 @@ for (i = 0; i < titre.length; i++) {
     }, false);
 }
 
-// Parfois, un événement(mouseover, mouseout, mousemove, click,...) appliqué 
-// sur un parent se propage à ses enfants. Cet héritage des événements peut 
+// Parfois, un événement(mouseover, mouseout, mousemove, click,...) appliqué
+// sur un parent se propage à ses enfants. Cet héritage des événements peut
 // provoquer des comportements inattendus.
 

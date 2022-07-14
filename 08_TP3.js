@@ -2,7 +2,7 @@
 
 // ******************************TP-A********************************************************
 let storage = {};
-const deplaceDiv = document.querySelectorAll(".draggableBox");
+const deplaceDiv = document.querySelectorAll("div");            // ou ".draggableBox"
 
 // tester la valeur dans deplaceDiv
 // for (let j = 0; j < 3; j++) {

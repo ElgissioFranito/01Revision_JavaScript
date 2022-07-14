@@ -14,7 +14,7 @@ txtarea.addEventListener('blur', (e) =>                     // blur: annuler le 
 let caz = document.querySelectorAll("input");               // Tout les input dans le document
 
 let safidy = () => {
-    for (let i = 0; i < caz.length; i++) {          // tsy asiagna ";" tsiny afarani "i++"
+    for (let i = 0; i < caz.length; i++) {          // tsy asiagna ";" tsony afarani "i++"
         if (caz[i].type == "radio" && caz[i].checked) {     // "==" satria comparaison; "&&" oprérateur ET
             alert("la case coché est la case numero: " + caz[i].value);
         }
@@ -29,7 +29,7 @@ lista.addEventListener('change', () =>
     true);
 
 
-// Submit et reset (input type)
+// Submit et reset (formulaire)
 myForm.addEventListener('submit', (e) => {
     e.preventDefault();
     alert("nalefanao ny formulaire! \n Kanefa nibloqueko de tsy misy zavatra tokony hiova amnio page io")
